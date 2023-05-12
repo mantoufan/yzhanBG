@@ -7,7 +7,7 @@
 Use multiple videos, images, and weather as background, with mute, hide, text, and cherry blossom, rain, snow, firefly, and butterfly animations.  
 用多个视频、图片、天气作背景，支持静音、隐藏内容、文字，以及樱花、雨、雪、萤火虫和蝴蝶动画
 ## Demo
-[Online Demo](https://mantoufan.github.io/yzhanbg/)  
+[Online Demo](https://mantoufan.github.io/yzhanBG)  
 ![DEMO GIF](https://s2.loli.net/2023/05/12/3xwLHqyRthi2EYJ.gif)
 ## Setup
 ### Node.js

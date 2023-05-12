@@ -1,6 +1,6 @@
 {
   "name": "yzhanbg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use multiple videos, images, and weather as background, with mute, hide, text, and cherry blossom, rain, snow, firefly, and butterfly animations. 用多个视频、图片、天气作背景，支持静音、隐藏内容、文字，以及樱花、雨、雪、萤火虫和蝴蝶动画",
   "main": "docs/yzhanbg.min.js",
   "files": [
