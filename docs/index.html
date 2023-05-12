@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YZhanBG Demo</title>
+  <link type="text/css" rel="stylesheet" href="./prism/prism.css">
+  <style>
+    body {
+      background-color: #fafafa;
+    }
+
+    pre {
+      margin: 0;
+    }
+
+    code {
+      display: block;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    #app {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      opacity: .7;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <pre><code class="language-javascript" contenteditable="true">const yzhanbg = new YZhanBG()
+yzhanbg.run([{
+  url: './bg/1.mp4',
+  weather: {
+    type: 'firefly', // Options: sakura | snow | firefly | rain | butterfly 
+    maxDuration: 10 // Default: 10s, this option can determine the speed of animations
+  },
+  text: '©ナルトMinh'
+},{
+  url: './bg/2.jpg',
+  duration: 3, // Default: undefined. Units: seconds. If video duration < this, it ends early
+  weather: {
+    type: 'sakura',
+    maxDuration: 5
+  },
+  text: '©narumilk'
+},{
+  url: './bg/3.mp4',
+  weather: {
+    type: 'butterfly',
+    maxDuration: 5
+  },
+  text: '©DeRanK'
+}])</code></pre>
+    <button>Run</button>
+  </div>
+  <script src="./prism/prism.js"></script>
+  <script src="./yzhanbg.min.js"></script>
+  <script>
+    var code = document.getElementsByTagName('CODE')[0], bt = document.getElementsByTagName('BUTTON')[0]
+    function run() { new Function(code.innerText)() }
+    bt.onclick = run
+    run()
+  </script>
+</body>
+
+</html>
